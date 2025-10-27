@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Briefcase, GraduationCap, Code, Users, Award, MapPin, TrendingUp, FileText, Link, DollarSign } from "lucide-react";
+import { Briefcase, GraduationCap, Code, Users, Award, MapPin, TrendingUp, FileText, Link, DollarSign, Globe } from "lucide-react";
 import type { Job } from "../types/job-types";
 
 interface JobCardProps {
@@ -90,13 +90,21 @@ const JobDetails: React.FC<{ job: Job }> = ({ job }) => (
             </DetailSection>
         </div>
         <div className="mt-6 md:my-auto md:mx-16">
+            <div className="flex md:justify-center items-center mb-4 pt-4 md:pt-0 gap-x-2 font-bold border-t md:border-0 border-t-gray-200">
+                <Globe className="w-5 h-5 text-primary" />
+                Kunjungi Sumber
+            </div>
             <div className="flex md:grid gap-4">
                 <div className="flex-1 avatar">
                     <div className="size-full md:size-80 ring rounded-lg">
                         <img src={job.qrUrl || "/vite.svg"} alt={`${job.company} QR`} />
                     </div>
                 </div>
-                <div className="flex-1 flex flex-col md:grid md:grid-cols-2 justify-end gap-4">
+                <div className="flex-1 flex flex-col md:grid md:grid-cols-2 justify-between gap-4">
+                    <a href={job.siteUrl || "#"} target="_blank" rel="noopener noreferrer" className="btn btn-primary md:col-span-2">
+                        <Globe size={16} />
+                        {job.source}
+                    </a>
                     <a href={job.siteUrl || "#"} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                         <FileText size={16} />
                         Baca Detail

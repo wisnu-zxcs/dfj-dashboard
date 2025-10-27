@@ -145,6 +145,6 @@ const Footer: React.FC = () => (
         </g>
       </svg>
     </div>
-    <p>v1.4.3</p>
+    <p>v1.4.6</p>
   </footer>
 );
