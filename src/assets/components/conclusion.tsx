@@ -1,155 +1,153 @@
 import React from "react";
 
 export const Conclusion: React.FC = () => (
-    <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
-        <div className="border-l-4 border-blue-600 pl-6">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Kesimpulan Analisis</h2>
+    <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200 border-l-4 border-l-blue-600">
+        <h2 className="text-2xl font-bold text-gray-800 mb-6">📝 Kesimpulan Analisis</h2>
 
-            <div className="space-y-6 text-gray-700">
-                {/* Ringkasan Temuan */}
-                <ExecutiveSummary />
+        <div className="space-y-6 text-gray-700">
+            {/* Ringkasan Temuan */}
+            <ExecutiveSummary />
 
-                {/* Perbedaan Teori vs Industri */}
-                <Section
-                    title="1. Perbedaan antara Teori yang Dipelajari di Kampus dengan Tuntutan Industri"
-                    color="text-blue-600"
-                    description="Berdasarkan analisis 10 lowongan kerja Fullstack Developer dari berbagai perusahaan (JobStreet, Glints, LinkedIn), ditemukan beberapa kesenjangan signifikan antara kurikulum akademis dan kebutuhan industri:"
-                >
-                    <div className="space-y-4">
-                        <SubSection
-                            title="A. Teknologi yang Digunakan"
-                            items={[
-                                {
-                                    label: "Di Kampus",
-                                    value: "Fokus pada konsep dasar algoritma, struktur data, dan bahasa pemrograman fundamental (C++, Java, Python)"
-                                },
-                                {
-                                    label: "Di Industri",
-                                    value: "Menuntut penguasaan ekosistem lengkap: React.js/Vue.js (frontend), Node.js/Laravel/Express.js (backend), PostgreSQL/MySQL/MongoDB (database), plus DevOps tools (CI/CD, AWS, Azure, Docker)"
-                                }
-                            ]}
-                        />
+            {/* Perbedaan Teori vs Industri */}
+            <Section
+                title="1. Perbedaan antara Teori yang Dipelajari di Kampus dengan Tuntutan Industri"
+                color="text-blue-600"
+                description="Berdasarkan analisis 10 lowongan kerja Fullstack Developer dari berbagai perusahaan (JobStreet, Glints, LinkedIn), ditemukan beberapa kesenjangan signifikan antara kurikulum akademis dan kebutuhan industri:"
+            >
+                <div className="space-y-4">
+                    <SubSection
+                        title="A. Teknologi yang Digunakan"
+                        items={[
+                            {
+                                label: "Di Kampus",
+                                value: "Fokus pada konsep dasar algoritma, struktur data, dan bahasa pemrograman fundamental (C++, Java, Python)"
+                            },
+                            {
+                                label: "Di Industri",
+                                value: "Menuntut penguasaan ekosistem lengkap: React.js/Vue.js (frontend), Node.js/Laravel/Express.js (backend), PostgreSQL/MySQL/MongoDB (database), plus DevOps tools (CI/CD, AWS, Azure, Docker)"
+                            }
+                        ]}
+                    />
 
-                        <SubSection
-                            title="B. Arsitektur dan Skalabilitas"
-                            items={[
-                                {
-                                    label: "Di Kampus",
-                                    value: "Project biasanya monolithic, fokus pada fungsionalitas dasar CRUD"
-                                },
-                                {
-                                    label: "Di Industri",
-                                    value: "Memerlukan pemahaman microservices, scalable architecture, query optimization, API-first design, dan distributed systems (terlihat di The Flex, Weshine, Goodeva)"
-                                }
-                            ]}
-                        />
+                    <SubSection
+                        title="B. Arsitektur dan Skalabilitas"
+                        items={[
+                            {
+                                label: "Di Kampus",
+                                value: "Project biasanya monolithic, fokus pada fungsionalitas dasar CRUD"
+                            },
+                            {
+                                label: "Di Industri",
+                                value: "Memerlukan pemahaman microservices, scalable architecture, query optimization, API-first design, dan distributed systems (terlihat di The Flex, Weshine, Goodeva)"
+                            }
+                        ]}
+                    />
 
-                        <SubSection
-                            title="C. Praktik Profesional"
-                            items={[
-                                {
-                                    label: "Di Kampus",
-                                    value: "Testing dan dokumentasi sering diabaikan atau minimal"
-                                },
-                                {
-                                    label: "Di Industri",
-                                    value: "TDD (Test Driven Development), unit testing, integration testing, code review, dan Git workflow (branching, PR) adalah standar wajib (PT Higo, PT Eksa, Goodeva)"
-                                }
-                            ]}
-                        />
+                    <SubSection
+                        title="C. Praktik Profesional"
+                        items={[
+                            {
+                                label: "Di Kampus",
+                                value: "Testing dan dokumentasi sering diabaikan atau minimal"
+                            },
+                            {
+                                label: "Di Industri",
+                                value: "TDD (Test Driven Development), unit testing, integration testing, code review, dan Git workflow (branching, PR) adalah standar wajib (PT Higo, PT Eksa, Goodeva)"
+                            }
+                        ]}
+                    />
 
-                        <SubSection
-                            title="D. Cloud & DevOps"
-                            items={[
-                                {
-                                    label: "Di Kampus",
-                                    value: "Deployment biasanya lokal atau hosting sederhana"
-                                },
-                                {
-                                    label: "Di Industri",
-                                    value: "Wajib menguasai cloud platforms (AWS, Azure, GCP), CI/CD pipelines, containerization, dan automation (disebutkan di 8 dari 11 lowongan)"
-                                }
-                            ]}
-                        />
+                    <SubSection
+                        title="D. Cloud & DevOps"
+                        items={[
+                            {
+                                label: "Di Kampus",
+                                value: "Deployment biasanya lokal atau hosting sederhana"
+                            },
+                            {
+                                label: "Di Industri",
+                                value: "Wajib menguasai cloud platforms (AWS, Azure, GCP), CI/CD pipelines, containerization, dan automation (disebutkan di 8 dari 10 lowongan)"
+                            }
+                        ]}
+                    />
 
-                        <SubSection
-                            title="E. Soft Skills dan Kolaborasi"
-                            items={[
-                                {
-                                    label: "Di Kampus",
-                                    value: "Project individu atau tim kecil dengan komunikasi terbatas"
-                                },
-                                {
-                                    label: "Di Industri",
-                                    value: "Kolaborasi lintas tim (Product, QA, DevOps, Marketing), komunikasi bahasa Inggris, mentoring junior, dan presentation skills sangat ditekankan (terutama untuk posisi senior)"
-                                }
-                            ]}
-                        />
-                    </div>
-                </Section>
+                    <SubSection
+                        title="E. Soft Skills dan Kolaborasi"
+                        items={[
+                            {
+                                label: "Di Kampus",
+                                value: "Project individu atau tim kecil dengan komunikasi terbatas"
+                            },
+                            {
+                                label: "Di Industri",
+                                value: "Kolaborasi lintas tim (Product, QA, DevOps, Marketing), komunikasi bahasa Inggris, mentoring junior, dan presentation skills sangat ditekankan (terutama untuk posisi senior)"
+                            }
+                        ]}
+                    />
+                </div>
+            </Section>
 
-                {/* Kesamaan yang Ditemukan */}
-                <Section
-                    title="2. Kesamaan dan Pola yang Konsisten di Semua Lowongan"
-                    color="text-green-600"
-                    description="Meskipun ada variasi dalam teknologi spesifik, terdapat kesamaan fundamental yang muncul di hampir semua lowongan:"
-                >
-                    <div className="grid md:grid-cols-2 gap-4 mt-4">
-                        <ComparisonCard
-                            title="Hard Skills Universal"
-                            color="green"
-                            items={[
-                                "JavaScript/TypeScript - Muncul di 100% lowongan",
-                                "React.js - Framework frontend paling dominan (9/10)",
-                                "Node.js - Backend JavaScript stack (8/10)",
-                                "RESTful API - Standar komunikasi client-server (10/10)",
-                                "Database SQL & NoSQL - PostgreSQL, MySQL, MongoDB",
-                                "Git Version Control - Wajib untuk semua posisi",
-                                "HTML5, CSS3 - Foundation web development"
-                            ]}
-                        />
-                        <ComparisonCard
-                            title="Soft Skills Universal"
-                            color="blue"
-                            items={[
-                                "Problem solving & analytical thinking (10/10)",
-                                "Komunikasi yang baik (10/10)",
-                                "Teamwork & kolaborasi (10/10)",
-                                "Adaptabilitas terhadap teknologi baru (9/10)",
-                                "Inisiatif tinggi & mandiri (8/10)",
-                                "Bahasa Inggris (7/10, terutama perusahaan besar)",
-                                "Attention to detail & tanggung jawab (7/10)"
-                            ]}
-                        />
-                    </div>
+            {/* Kesamaan yang Ditemukan */}
+            <Section
+                title="2. Kesamaan dan Pola yang Konsisten di Semua Lowongan"
+                color="text-green-600"
+                description="Meskipun ada variasi dalam teknologi spesifik, terdapat kesamaan fundamental yang muncul di hampir semua lowongan:"
+            >
+                <div className="grid md:grid-cols-2 gap-4 mt-4">
+                    <ComparisonCard
+                        title="Hard Skills Universal"
+                        color="green"
+                        items={[
+                            "JavaScript/TypeScript - Muncul di 100% lowongan",
+                            "React.js - Framework frontend paling dominan (9/10)",
+                            "Node.js - Backend JavaScript stack (8/10)",
+                            "RESTful API - Standar komunikasi client-server (10/10)",
+                            "Database SQL & NoSQL - PostgreSQL, MySQL, MongoDB",
+                            "Git Version Control - Wajib untuk semua posisi",
+                            "HTML5, CSS3 - Foundation web development"
+                        ]}
+                    />
+                    <ComparisonCard
+                        title="Soft Skills Universal"
+                        color="blue"
+                        items={[
+                            "Problem solving & analytical thinking (10/10)",
+                            "Komunikasi yang baik (10/10)",
+                            "Teamwork & kolaborasi (10/10)",
+                            "Adaptabilitas terhadap teknologi baru (9/10)",
+                            "Inisiatif tinggi & mandiri (8/10)",
+                            "Bahasa Inggris (7/10, terutama perusahaan besar)",
+                            "Attention to detail & tanggung jawab (7/10)"
+                        ]}
+                    />
+                </div>
 
-                    <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
-                        <h4 className="font-bold text-green-800 mb-2">📊 Pola Berdasarkan Level Pengalaman:</h4>
-                        <ul className="list-disc ml-6 space-y-2 text-sm">
-                            <li><strong>Fresh Graduate - Entry-Level (0-3 tahun):</strong> Fokus pada fundamental (React, Node.js, database dasar), testing, dan Git. Gaji: Rp 2.5-9 juta/bulan</li>
-                            <li><strong>Senior (3+ tahun):</strong> Ditambah scalability, microservices, mentoring, leadership, cloud architecture, dan A/B testing. Gaji: Rp 16-24 juta/bulan (bahkan lebih untuk remote international)</li>
-                        </ul>
-                    </div>
-                </Section>
+                <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                    <h4 className="font-bold text-green-800 mb-2">📊 Pola Berdasarkan Level Pengalaman:</h4>
+                    <ul className="list-disc ml-6 space-y-2 text-sm">
+                        <li><strong>Fresh Graduate - Entry-Level (0-3 tahun):</strong> Fokus pada fundamental (React, Node.js, database dasar), testing, dan Git. Gaji: Rp 2.5-9 juta/bulan</li>
+                        <li><strong>Senior (3+ tahun):</strong> Ditambah scalability, microservices, mentoring, leadership, cloud architecture, dan A/B testing. Gaji: Rp 16-24 juta/bulan (bahkan lebih untuk remote international)</li>
+                    </ul>
+                </div>
+            </Section>
 
-                {/* Keterampilan yang Harus Difokuskan */}
-                <Section
-                    title="3. Keterampilan yang Harus Difokuskan Mahasiswa agar Siap Bersaing"
-                    color="text-purple-600"
-                    description="Berdasarkan analisis mendalam terhadap 10 lowongan, berikut prioritas keterampilan yang harus dikuasai mahasiswa untuk meningkatkan daya saing di industri:"
-                >
-                    <SkillsPriority />
-                </Section>
+            {/* Keterampilan yang Harus Difokuskan */}
+            <Section
+                title="3. Keterampilan yang Harus Difokuskan Mahasiswa agar Siap Bersaing"
+                color="text-purple-600"
+                description="Berdasarkan analisis mendalam terhadap 10 lowongan, berikut prioritas keterampilan yang harus dikuasai mahasiswa untuk meningkatkan daya saing di industri:"
+            >
+                <SkillsPriority />
+            </Section>
 
-                {/* Rekomendasi Aksi */}
-                <ActionPlan />
+            {/* Rekomendasi Aksi */}
+            <ActionPlan />
 
-                {/* Insight Tambahan */}
-                <AdditionalInsights />
+            {/* Insight Tambahan */}
+            <AdditionalInsights />
 
-                {/* Catatan Penutup */}
-                <FinalNote />
-            </div>
+            {/* Catatan Penutup */}
+            <FinalNote />
         </div>
     </div>
 );
@@ -250,11 +248,11 @@ const SkillsPriority: React.FC = () => (
                     color="red"
                     skills={[
                         "JavaScript Modern (ES6+) - Fundamental untuk frontend & backend (100% lowongan)",
-                        "React.js - Framework frontend paling dicari (82% lowongan)",
-                        "Node.js + Express.js - Backend JavaScript stack (73% lowongan)",
+                        "React.js - Framework frontend paling dicari (80% lowongan)",
+                        "Node.js + Express.js - Backend JavaScript stack (70% lowongan)",
                         "RESTful API - Design, implementation, dan best practices (100% lowongan)",
                         "Git & GitHub/GitLab - Version control, branching, PR, code review (100% lowongan)",
-                        "Database SQL - PostgreSQL/MySQL dengan query optimization (91% lowongan)"
+                        "Database SQL - PostgreSQL/MySQL dengan query optimization (90% lowongan)"
                     ]}
                 />
 
@@ -262,12 +260,12 @@ const SkillsPriority: React.FC = () => (
                     priority="P1 - SANGAT PENTING"
                     color="orange"
                     skills={[
-                        "TypeScript - Type safety untuk project skala besar (64% lowongan)",
-                        "Database NoSQL - MongoDB untuk data non-relasional (45% lowongan)",
-                        "Testing - Unit testing (Jest), Integration testing (73% lowongan)",
+                        "TypeScript - Type safety untuk project skala besar (60% lowongan)",
+                        "Database NoSQL - MongoDB untuk data non-relasional (40% lowongan)",
+                        "Testing - Unit testing (Jest), Integration testing (70% lowongan)",
                         "HTML5 & CSS3 - Semantic markup, responsive design, Flexbox/Grid",
-                        "PHP & Laravel - Masih populer di perusahaan Indonesia (27% lowongan)",
-                        "CI/CD - Jenkins, GitHub Actions, deployment automation (73% lowongan)"
+                        "PHP & Laravel - Masih populer di perusahaan Indonesia (20% lowongan)",
+                        "CI/CD - Jenkins, GitHub Actions, deployment automation (70% lowongan)"
                     ]}
                 />
 
@@ -275,12 +273,12 @@ const SkillsPriority: React.FC = () => (
                     priority="P2 - NILAI TAMBAH BESAR"
                     color="yellow"
                     skills={[
-                        "Cloud Platform - AWS (Lambda, S3, EC2), Azure, atau GCP basics (55% lowongan)",
-                        "Microservices Architecture - Design pattern untuk scalability (36% lowongan)",
+                        "Cloud Platform - AWS (Lambda, S3, EC2), Azure, atau GCP basics (50% lowongan)",
+                        "Microservices Architecture - Design pattern untuk scalability (30% lowongan)",
                         "Docker & Kubernetes - Containerization untuk deployment konsisten",
                         "Redux/Context API - State management untuk aplikasi kompleks",
-                        "Vue.js/Angular - Alternatif framework frontend (27% lowongan)",
-                        "Python/Go - Backend tambahan untuk automation & high-performance (27% lowongan)"
+                        "Vue.js/Angular - Alternatif framework frontend (20% lowongan)",
+                        "Python/Go - Backend tambahan untuk automation & high-performance (20% lowongan)"
                     ]}
                 />
 
