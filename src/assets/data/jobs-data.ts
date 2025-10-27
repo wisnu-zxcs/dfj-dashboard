@@ -31,8 +31,8 @@ export const jobData: Job[] = [
         certification: "-",
         location: "Jakarta Barat, Jakarta Raya",
         source: "JobStreet",
-        logoUrl: "/higo-logo.png",
-        qrUrl: "/higo-qr.png",
+        logoUrl: "higo-logo.png",
+        qrUrl: "higo-qr.png",
         siteUrl: "https://id.jobstreet.com/id/job/87798417?ref=search-standalone&type=standard&origin=showNewTab#sol=5177001fe9ff2943bc883a7fbfe3454566e4fd2e"
     },
     {
@@ -59,8 +59,8 @@ export const jobData: Job[] = [
         certification: "-",
         location: "Jakarta Selatan, Jakarta Raya",
         source: "JobStreet",
-        logoUrl: "/prestia-logo.png",
-        qrUrl: "/prestia-qr.png",
+        logoUrl: "prestia-logo.png",
+        qrUrl: "prestia-qr.png",
         siteUrl: "https://id.jobstreet.com/id/job/87698780?ref=search-standalone&type=standard&origin=showNewTab#sol=9c20b699b694526d4006bd6ad8857a6cc30f1966"
     },
     {
@@ -87,8 +87,8 @@ export const jobData: Job[] = [
         certification: "-",
         location: "Jakarta Selatan, Jakarta Raya",
         source: "JobStreet",
-        logoUrl: "/cbn-logo.jpg",
-        qrUrl: "/cbn-qr.png",
+        logoUrl: "cbn-logo.jpg",
+        qrUrl: "cbn-qr.png",
         siteUrl: "https://id.jobstreet.com/id/job/87581837?ref=search-standalone&type=standard&origin=showNewTab#sol=4d69910399b267fc7acc05bb464e89ee74d2fe01"
     },
     {
@@ -117,8 +117,8 @@ export const jobData: Job[] = [
         certification: "Sertifikasi Web atau Mobile Development (JavaScript, Flutter, Android, SQL) menjadi nilai tambah",
         location: "Surabaya, Jawa Timur",
         source: "JobStreet",
-        logoUrl: "/japfa-logo.jpg",
-        qrUrl: "/japfa-qr.png",
+        logoUrl: "japfa-logo.jpg",
+        qrUrl: "japfa-qr.png",
         siteUrl: "https://id.jobstreet.com/id/job/87994629?ref=search-standalone&type=standard&origin=showNewTab#sol=c231504a1fa80cf87651b9e52493554c56aba8a7"
     },
     {
@@ -145,8 +145,8 @@ export const jobData: Job[] = [
         certification: "-",
         location: "Sleman, Daerah Istimewa Yogyakarta (DIY)",
         source: "Glints",
-        logoUrl: "/jogjatama-logo.webp",
-        qrUrl: "/jogjatama-qr.png",
+        logoUrl: "jogjatama-logo.webp",
+        qrUrl: "jogjatama-qr.png",
         siteUrl: "https://glints.com/id/opportunities/jobs/full-stack-developer/4060348c-1020-4a04-81bc-08d8486e57ae?utm_medium=share&utm_campaign=marketplace"
     },
     {
@@ -176,8 +176,8 @@ export const jobData: Job[] = [
         certification: "-",
         location: "Surabaya, Jawa Timur",
         source: "Glints",
-        logoUrl: "/eksa-logo.webp",
-        qrUrl: "/eksa-qr.png",
+        logoUrl: "eksa-logo.webp",
+        qrUrl: "eksa-qr.png",
         siteUrl: "https://glints.com/id/opportunities/jobs/full-stack-developer/f6b3f9b2-2897-4248-bdf8-d4700aaf2f9a?utm_medium=share&utm_campaign=marketplace"
     },
     {
@@ -210,8 +210,8 @@ export const jobData: Job[] = [
         certification: "-",
         location: "Jakarta, Jakarta Raya",
         source: "Glints",
-        logoUrl: "/goodeva-logo.webp",
-        qrUrl: "/goodeva-qr.png",
+        logoUrl: "goodeva-logo.webp",
+        qrUrl: "goodeva-qr.png",
         siteUrl: "https://glints.com/id/opportunities/jobs/full-stack-developer/af0da2b4-e24b-426d-abce-b8ac7a04237c?utm_medium=share&utm_campaign=marketplace"
     },
     {
@@ -242,8 +242,8 @@ export const jobData: Job[] = [
         certification: "-",
         location: "Jakarta Barat, Jakarta Raya",
         source: "LinkedIn",
-        logoUrl: "/laku6-logo.jpg",
-        qrUrl: "/laku6-qr.png",
+        logoUrl: "laku6-logo.jpg",
+        qrUrl: "laku6-qr.png",
         siteUrl: "https://www.linkedin.com/jobs/view/4301645476/"
     },
     {
@@ -275,8 +275,8 @@ export const jobData: Job[] = [
         certification: "-",
         location: "Denpasar, Bali",
         source: "LinkedIn",
-        logoUrl: "/flex-logo.jpg",
-        qrUrl: "/flex-qr.png",
+        logoUrl: "flex-logo.jpg",
+        qrUrl: "flex-qr.png",
         siteUrl: "https://www.linkedin.com/jobs/view/4317006280/"
     },
     {
@@ -309,8 +309,8 @@ export const jobData: Job[] = [
         certification: "-",
         location: "Jakarta, Jakarta Raya",
         source: "LinkedIn",
-        logoUrl: "/weshine-logo.jpg",
-        qrUrl: "/weshine-qr.png",
+        logoUrl: "weshine-logo.jpg",
+        qrUrl: "weshine-qr.png",
         siteUrl: "https://www.linkedin.com/jobs/view/4303653325/"
     },
 ]
