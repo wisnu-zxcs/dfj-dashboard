@@ -11,4 +11,7 @@ export interface Job {
     certification: string;
     location: string;
     source: string;
+    logoUrl: string;
+    qrUrl: string;
+    siteUrl: string;
 }
