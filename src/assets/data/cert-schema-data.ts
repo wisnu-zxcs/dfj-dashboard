@@ -1,0 +1,121 @@
+import type { CertificationData } from "../types/cert-schema-types";
+
+export const certificationData: CertificationData = {
+    namaSkema: "Pengembang Web Pratama (Junior Web Developer)",
+    kodeSkema: "SKM/1565",
+    jenisSkema: "Okupasi",
+    lsp: "LSP Teknologi Digital",
+    lisensiLSP: "Terlisensi BNSP (Badan Nasional Sertifikasi Profesi)",
+    rujukanSKKNI: "SKKNI Bidang Pengembangan Piranti Lunak (Software Development) - Kepmenaker No. 281 Tahun 2016",
+    levelKKNI: "Level 3-4",
+    masaBerlaku: "3 Tahun (dapat diperpanjang melalui resertifikasi)",
+    biayaEstimasi: "Rp 1.000.000 - Rp 1.500.000",
+    unitKompetensi: [
+        {
+            kode: "J.620100.005.02",
+            judul: "Mengimplementasikan User Interface",
+            priority: 1,
+            kategori: "Frontend Development",
+            deskripsi:
+                "Kemampuan untuk merancang dan mengimplementasikan antarmuka pengguna yang interaktif dan responsif",
+            kuk: [
+                "Elemen-elemen HTML telah dibuat sesuai dengan standar markup yang berlaku dan mengikuti prinsip semantic HTML",
+                "Stylesheet CSS telah diterapkan untuk mengatur tampilan visual dengan mengikuti best practices (responsive design, mobile-first approach)",
+                "Layout halaman telah diatur menggunakan teknik modern (Flexbox, CSS Grid) dan dapat beradaptasi di berbagai ukuran layar",
+                "Komponen UI telah diimplementasikan dengan mempertimbangkan user experience (UX) dan accessibility standards",
+                "Interaktivitas dasar telah ditambahkan menggunakan JavaScript untuk meningkatkan pengalaman pengguna",
+            ],
+            teknologi: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Bootstrap/Tailwind"],
+        },
+        {
+            kode: "J.620100.010.01",
+            judul:
+                "Menerapkan perintah eksekusi bahasa pemrograman berbasis teks, grafik, dan multimedia",
+            priority: 2,
+            kategori: "Programming Fundamentals",
+            deskripsi:
+                "Kemampuan untuk menulis dan mengeksekusi kode program dengan berbagai tipe data dan media",
+            kuk: [
+                "Sintaks bahasa pemrograman telah diterapkan dengan benar sesuai dengan standar bahasa yang digunakan (JavaScript, PHP, Python)",
+                "Variabel dan tipe data telah dideklarasikan dan digunakan dengan tepat sesuai kebutuhan program",
+                "Perintah input/output telah diimplementasikan untuk interaksi dengan pengguna atau sistem",
+                "Manipulasi teks, grafik, dan multimedia telah dilakukan sesuai dengan requirement aplikasi",
+                "Error handling telah diterapkan untuk menangani kondisi exception dan kesalahan runtime",
+            ],
+            teknologi: ["JavaScript", "PHP", "Python", "DOM Manipulation", "Canvas API"],
+        },
+        {
+            kode: "J.620100.015.01",
+            judul: "Menyusun fungsi, file atau sumber daya pemrograman yang lain dalam organisasi yang rapi",
+            priority: 3,
+            kategori: "Code Organization",
+            deskripsi:
+                "Kemampuan untuk mengorganisir kode program secara terstruktur dan mudah dipelihara",
+            kuk: [
+                "Fungsi-fungsi telah dibuat dengan prinsip single responsibility dan dapat digunakan kembali (reusable)",
+                "File-file program telah diorganisir dalam struktur folder yang logis dan mudah dinavigasi",
+                "Penamaan variabel, fungsi, dan file telah mengikuti konvensi naming yang konsisten dan deskriptif",
+                "Modularisasi kode telah diterapkan untuk memisahkan concern yang berbeda (separation of concerns)",
+                "Dokumentasi inline (comments) telah ditambahkan pada bagian kode yang kompleks untuk memudahkan pemeliharaan",
+            ],
+            teknologi: ["Module Pattern", "MVC Architecture", "Project Structure", "Documentation"],
+        },
+        {
+            kode: "J.620100.016.01",
+            judul: "Menulis kode dengan prinsip sesuai guidelines dan best practices",
+            priority: 1,
+            kategori: "Code Quality",
+            deskripsi: "Kemampuan untuk menulis kode berkualitas tinggi yang mengikuti standar industri",
+            kuk: [
+                "Kode program telah mengikuti style guide dan coding standards yang berlaku (ESLint, Prettier, PSR)",
+                "Indentasi dan formatting telah diterapkan secara konsisten di seluruh codebase",
+                "Prinsip DRY (Don't Repeat Yourself) telah diterapkan untuk menghindari duplikasi kode",
+                "Code readability telah dioptimalkan dengan menggunakan nama yang descriptive dan struktur yang clear",
+                "Best practices keamanan dasar telah diterapkan (input validation, XSS prevention, SQL injection prevention)",
+            ],
+            teknologi: ["Coding Standards", "ESLint", "Code Review", "Security Basics"],
+        },
+        {
+            kode: "J.620100.017.02",
+            judul: "Mengimplementasikan pemrograman terstruktur",
+            priority: 2,
+            kategori: "Programming Paradigm",
+            deskripsi: "Kemampuan untuk menerapkan konsep pemrograman terstruktur dalam pengembangan aplikasi",
+            kuk: [
+                "Struktur kontrol (if-else, switch-case) telah digunakan dengan tepat sesuai logika bisnis",
+                "Perulangan (for, while, do-while) telah diimplementasikan secara efisien untuk operasi berulang",
+                "Algoritma telah dirancang dengan alur logika yang jelas dan terstruktur menggunakan pseudocode atau flowchart",
+                "Nested structure telah dioptimalkan untuk menghindari kompleksitas yang berlebihan",
+                "Program dapat dijalankan tanpa error dan menghasilkan output sesuai spesifikasi",
+            ],
+            teknologi: ["Control Flow", "Loops", "Algorithms", "Flowchart", "Pseudocode"],
+        },
+        {
+            kode: "J.620100.019.02",
+            judul: "Menggunakan library atau komponen pre-existing",
+            priority: 3,
+            kategori: "Integration & Libraries",
+            deskripsi: "Kemampuan untuk mengintegrasikan library dan framework pihak ketiga",
+            kuk: [
+                "Library eksternal telah diidentifikasi dan dipilih sesuai dengan kebutuhan proyek (npm packages, CDN)",
+                "Instalasi dan konfigurasi library telah dilakukan dengan benar menggunakan package manager (npm, yarn)",
+                "Dokumentasi library telah dipahami dan API telah digunakan sesuai dengan panduan official",
+                "Dependencies telah dikelola dengan baik dan conflicts antar library telah diselesaikan",
+                "Integrasi library telah diuji dan berfungsi dengan baik dalam konteks aplikasi",
+            ],
+            teknologi: ["NPM", "jQuery", "Bootstrap", "React", "API Integration"],
+        },
+    ],
+    metodePenilaian: [
+        "Asesmen Portofolio - Review project dan kode yang telah dibuat",
+        "Uji Tertulis - Multiple choice dan essay tentang konsep pemrograman web",
+        "Uji Praktik - Demonstrasi pembuatan aplikasi web sederhana",
+        "Wawancara - Penjelasan tentang decision making dalam coding",
+    ],
+    persyaratan: [
+        "Minimal lulusan SMA/SMK sederajat",
+        "Memiliki pengalaman atau pelatihan di bidang web programming",
+        "Memahami dasar-dasar HTML, CSS, dan JavaScript",
+        "Memiliki portofolio project web (diutamakan)",
+    ],
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { jobData } from "./assets/data/jobs-data";
 import { JobCard } from "./assets/components/jobs-card";
-import { ComparisonTable } from "./assets/components/comparisson-table";
+import { ComparisonTable } from "./assets/components/comparisson-table-6";
 import { Conclusion } from "./assets/components/conclusion";
 
 type TabKey = "cards" | "table" | "conclusion";
